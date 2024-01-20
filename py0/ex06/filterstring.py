@@ -1,4 +1,5 @@
 import sys
+from ft_filter import ft_filter
 
 
 def isValidString(string):
@@ -9,11 +10,16 @@ def isValidString(string):
     return True
 
 
+def supWordSize(word, size):
+    """check if the word is longer than the size"""
+    return len(word) > size
+
+
 def main():
     assert len(sys.argv) == 3 and isValidString(sys.argv[1]) \
         and sys.argv[2].isdigit(), "the arguments are bad"
-    print([word for word in sys.argv[1].split()
-           if len(word) > int(sys.argv[2])])
+    sentence = sys.argv[1].split()
+    print(ft_filter(lambda x: supWordSize(x, int(sys.argv[2])), sentence))
 
 
 if __name__ == "__main__":

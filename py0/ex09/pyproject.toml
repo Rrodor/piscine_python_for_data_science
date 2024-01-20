@@ -1,0 +1,13 @@
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="rrodor"},
+  { email="rrodor@student.42perpignan.fr" },
+]
+description = "A sample test package"
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+]

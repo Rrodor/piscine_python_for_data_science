@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ft_package
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/Rrodor/piscine_python_for_data_science.git
+Author: rrodor
+Author-email: rrodor@student.42perpignan.fr
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Example Package
+
+This is a simple example package.
