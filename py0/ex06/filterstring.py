@@ -16,10 +16,14 @@ def supWordSize(word, size):
 
 
 def main():
-    assert len(sys.argv) == 3 and isValidString(sys.argv[1]) \
-        and sys.argv[2].isdigit(), "the arguments are bad"
-    sentence = sys.argv[1].split()
-    print(ft_filter(lambda x: supWordSize(x, int(sys.argv[2])), sentence))
+    """Filter a sentence by word size."""
+    try:
+        assert len(sys.argv) == 3 and isValidString(sys.argv[1]) \
+            and sys.argv[2].isdigit(), "the arguments are bad"
+        sentence = sys.argv[1].split()
+        print(ft_filter(lambda x: supWordSize(x, int(sys.argv[2])), sentence))
+    except AssertionError as e:
+        print("AssertionError: {}".format(e))
 
 
 if __name__ == "__main__":
